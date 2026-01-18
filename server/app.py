@@ -33,7 +33,7 @@ def show_article(id):
 
     if session['page_views'] > 3:
         return{
-            "message": "Maximum pageview limit reached. Please sign up to continue.",
+            'message': 'Maximum pageview limit reached',
         }, 401
     
     article = Article.query.get(id)
